@@ -1,0 +1,10 @@
+name = "conciliacao-bancaria-ebt"
+pages_build_output_dir = "./dist"
+compatibility_date = "2025-10-01"
+
+[vars]
+SUPABASE_URL = "https://kynjbbdsfkuqjrihjdmj.supabase.co"
+PUBLIC_ORIGIN = "https://conciliacao-bancaria-ebt.pages.dev"
+
+# Cadastre SUPABASE_ANON_KEY e SUPABASE_SERVICE_ROLE_KEY como Secrets
+# no projeto Pages. Nunca coloque chaves reais neste arquivo.

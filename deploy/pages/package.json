@@ -1,0 +1,12 @@
+{
+ "name":"ponto-forte-pages-online",
+ "private":true,
+ "type":"module",
+ "scripts":{
+  "prepare":"node prepare.mjs",
+  "check":"node --check dist/_worker.js && node --check dist/static/portal.js && node --check dist/static/finance-bridge.js",
+  "dev":"wrangler pages dev dist",
+  "test:sql":"node ../../tests/supabase-workflow.cjs"
+ },
+ "devDependencies":{"wrangler":"^4.0.0","@electric-sql/pglite":"0.5.15"}
+}
